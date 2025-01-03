@@ -1,0 +1,302 @@
+#skills{
+    height: 100%;
+    max-height: calc(100vh - 5rem);
+    /* overflow: hidden; */
+    width: 100%;
+    max-width: 65rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0rem; */
+}
+.what{
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    /* border: solid black; */
+
+    font-weight: 700;
+}
+.explain{
+    width: 100vw;
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-bottom:1rem ;
+    padding: 0 0.7rem;
+    text-align: start;
+
+
+    /* border: solid black; */
+
+}
+
+.Skillbar{
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 11vh;
+    object-fit:fill;
+    min-width: 15%;
+    width: 100%;
+    flex: 0 1 10%;   
+    flex-shrink: 1;
+
+    /* flex: 1 1 auto; */
+    /* padding: 0 1rem; */
+}
+
+.Skillbar:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-contain {
+  height: 100%;
+  max-height: 40rem;
+    width: 100%;
+    max-width: 40rem;
+    gap: 4rem; 
+    padding: 1rem; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+
+
+.image-contain img:hover {
+    transform: scale(1.1); /* Enlarge image slightly on hover */
+}
+
+@media screen and (max-width:440px){
+    .image-contain {
+        display: flex;               /* Align images in a row */
+        flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+        gap: 20px;                   /* Space between images */
+        justify-content: space-evenly;
+      }
+    
+      .Skillbar {
+        flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+        object-fit: cover;           /* Ensures images cover the space properly */
+        width: 20%;                
+        height: 13vh;   
+        object-fit:fill;
+        padding: 0.5rem;             /* Maintain aspect ratio */
+      }
+      .what{
+        font-size: 1.3rem;
+    }
+    .explain{
+      font-size:0.8rem;
+    }
+}
+@media screen and (max-width:350px){
+    .image-contain {
+        display: flex;               /* Align images in a row */
+        flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+        gap: 10px;                   /* Space between images */
+      }
+    
+      .Skillbar {
+        flex: 0 1 auto ;              /* Each image should take up 100% of the container width on small screens */
+        object-fit: cover;           /* Ensures images cover the space properly */
+        width: 20%;                 /* Make images responsive to the container's size */
+        height: 13vh; 
+        object-fit:fill;
+        padding: 0.5rem;                  /* Maintain aspect ratio */
+      }
+      .what{
+        font-size: 1rem;
+    }
+    .explain{
+      font-size:0.65rem;
+    }
+}
+@media screen and (max-width:586px){
+    .image-contain {
+        display: flex;               /* Align images in a row */
+        flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+        gap: 10px;                   /* Space between images */
+      }
+    
+      .Skillbar {
+        flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+        object-fit: cover;           /* Ensures images cover the space properly */
+        width: 20%;                 /* Make images responsive to the container's size */
+        height: 13vh;    
+        object-fit:fill;
+        padding: 0.5rem;               /* Maintain aspect ratio */
+      }
+      .what{
+        font-size: 2.7rem;
+    }
+    .explain{
+      font-size:0.9rem;
+    }
+}
+@media screen and (max-width:380px){
+    .image-contain {
+        display: flex;               /* Align images in a row */
+        flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+        gap: 10px;                   /* Space between images */
+      }
+    
+      .Skillbar {
+        flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+        object-fit: cover;           /* Ensures images cover the space properly */
+        width: 20%;                 /* Make images responsive to the container's size */
+        height: 13vh;
+        object-fit:fill;   
+        padding: 0.5rem;                /* Maintain aspect ratio */
+      }
+      
+    .what{
+        font-size: 1rem;
+    }
+    .explain{
+      font-size:0.56rem;
+    }
+    
+}
+@media screen and (max-width:855px){
+  .image-contain {
+      display: flex;               /* Align images in a row */
+      flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+      gap: 10px;                   /* Space between images */
+    }
+  
+    .Skillbar {
+      flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+      object-fit: cover;           /* Ensures images cover the space properly */
+      width: 20%;                 /* Make images responsive to the container's size */
+      height: 13vh;
+      object-fit:fill;   
+      padding: 0.5rem;                /* Maintain aspect ratio */
+    }
+    
+  .what{
+      font-size: 4rem;
+  }
+  .explain{
+    font-size:1rem;
+  }
+  
+}
+@media screen and (max-width:932px){
+  .image-contain {
+      display: flex;               /* Align images in a row */
+      flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+      gap: 10px;                   /* Space between images */
+    }
+  
+    .Skillbar {
+      flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+      object-fit: cover;           /* Ensures images cover the space properly */
+      width: 20%;                 /* Make images responsive to the container's size */
+      height: 13vh;
+      object-fit:fill;   
+      padding: 0.5rem;                /* Maintain aspect ratio */
+    }
+    
+  .what{
+      font-size: 4rem;
+  }
+  .explain{
+    font-size:1rem;
+  }
+  
+}
+@media screen and (max-width:330px){
+  .image-contain {
+      display: flex;               /* Align images in a row */
+      flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+      gap: 10px;                   /* Space between images */
+    }
+  
+    .Skillbar {
+      flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+      object-fit: cover;           /* Ensures images cover the space properly */
+      width: 20%;                 /* Make images responsive to the container's size */
+      height: 13vh;
+      object-fit:fill;   
+      padding: 0.5rem;                /* Maintain aspect ratio */
+    }
+    
+  .what{
+      font-size: 1.8rem;
+  }
+  .explain{
+    font-size:0.8rem;
+  }
+  
+}
+@media screen and (max-width:400px){
+  .image-contain {
+      display: flex;               /* Align images in a row */
+      flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+      gap: 10px;                   /* Space between images */
+    }
+  
+    .Skillbar {
+      flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+      object-fit: cover;           /* Ensures images cover the space properly */
+      width: 20%;                 /* Make images responsive to the container's size */
+      height: 13vh;
+      object-fit:fill;   
+      padding: 0.5rem;                /* Maintain aspect ratio */
+    }
+    
+    .what{
+      font-size: 1rem;
+  }
+  .explain{
+    font-size:0.8rem;
+  }
+  
+}
+@media screen and (max-width:490px){
+  .image-contain {
+      display: flex;               /* Align images in a row */
+      flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+      gap: 10px;                   /* Space between images */
+    }
+  
+    .Skillbar {
+      flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+      object-fit: cover;           /* Ensures images cover the space properly */
+      width: 20%;                 /* Make images responsive to the container's size */
+      height: 13vh;
+      object-fit:fill;   
+      padding: 0.5rem;                /* Maintain aspect ratio */
+    }
+    
+    .what{
+      font-size: 2rem;
+  }
+  .explain{
+    font-size:0.8rem;
+  }
+  
+}
+@media screen and (max-width:2000px){
+  .image-contain {
+      display: flex;               /* Align images in a row */
+      flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+      gap: 10px;                   /* Space between images */
+    }
+  
+    .Skillbar {
+      flex: 0 1 auto;              /* Each image should take up 100% of the container width on small screens */
+      object-fit: cover;           /* Ensures images cover the space properly */
+      width: 20%;                 /* Make images responsive to the container's size */
+      height: 13vh;
+      object-fit:fill;   
+      padding: 0.5rem; 
+      flex-shrink: 1;               /* Maintain aspect ratio */
+    }
+  }
+
+/* Responsive Design */

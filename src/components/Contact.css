@@ -1,0 +1,133 @@
+#contact {
+    height: 100%;
+    max-height: calc(100vh - 5rem); /* Prevents the container from overflowing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Add spacing between elements */
+    width: 100%;
+    max-width: 60rem; /* Restrict maximum width for larger screens */
+    margin: 0 auto;
+    flex: 0 1 auto;
+    padding: 2rem; /* Add some padding to the sides for larger screens */
+    box-sizing: border-box; /* Ensures padding doesn’t affect layout */
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Space between form elements */
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    /* border: solid black; */
+}
+
+.ninput, .msg {
+    width: 100%; /* Ensure input fields take full width of their container */
+    max-width: 30rem; /* Restrict the maximum width for inputs */
+    height: 3rem; /* Standard input height */
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    background-color:rgb(40,40,40);
+    color: white;
+    flex: 0 1 auto; /* Allow inputs to grow and shrink */
+}
+
+.msg {
+    height: 9rem; /* Larger height for the message box */
+    resize: none; /* Prevent text box resizing */
+}
+
+.submit {
+    width: 100%; /* Make the submit button full width */
+    max-width: 15rem; /* Restrict width */
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #2d89e5; /* Background color for the button */
+    color: white; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.slinks{
+    width: 100%;
+    max-width:15rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    gap: 0.1rem;
+}
+
+
+.submit:hover {
+    background-color: #1e60c4; /* Darken on hover */
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding: 1.5rem; /* Less padding on medium screens */
+    }
+
+    .ninput, .msg {
+        width: 90%; /* Allow inputs to take more space */
+        max-width: 25rem; /* Smaller max-width for medium screens */
+    }
+
+    .submit {
+        width: 50%; /* Make button take up more space on medium screens */
+        max-width: 12rem;
+    }
+    .headcont{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 90%; /* Decrease width on tablet screens */
+        padding: 1rem;
+    }
+
+    .ninput, .msg {
+        width: 90%; /* Inputs take up 90% of the container width */
+        max-width: 20rem; /* Allow smaller inputs on smaller screens */
+    }
+
+    .submit {
+        width: 50%;
+        max-width: 12rem;
+    }
+    .headcont{
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .contact {
+        width: 90%; /* Full width on small mobile screens */
+        padding: 0.5rem; /* Less padding for very small screens */
+    }
+
+    .ninput, .msg {
+        width: 100%; /* Inputs take full width on mobile */
+        max-width: 100%; /* Remove max-width to allow full flexibility */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .submit {
+        width: 100%;
+        max-width: 50%; /* Full width button */
+        padding: 1rem;
+    }
+    .headcont{
+        font-size: 2.5rem;
+    }
+}
+
+

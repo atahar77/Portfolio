@@ -1,0 +1,95 @@
+/* Default Styles for Navbar */
+.main {
+    height: 5rem;
+    width: 100%;
+    max-width: 75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-shrink: 1;
+    background: rgb(30, 30, 30);
+}
+
+.logo {
+    height: 3rem;
+    position: sticky;
+    object-fit: cover;
+}
+
+.link {
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    border: none;
+}
+
+/* Hover and Active States */
+.link:hover, .active {
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+/* Mobile Hamburger Button - Hidden by default */
+.mobbutt {
+    height: 2rem;
+    object-fit: cover;
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Navigation Menu (Initially hidden) */
+.navimenu {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    z-index: 2;
+    display: none; /* Initially hidden */
+    padding: 0.5rem;
+    flex-direction: column;
+    height: fit-content;
+    background: rgb(40, 40, 40);
+    min-width: 10rem;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+}
+
+/* Style for Menu Items */
+.listi {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.1rem;
+    background: rgb(30, 30, 30);
+}
+
+/* Media Query for Small Screens (Max-width: 670px) */
+@media screen and (max-width: 670px) {
+    /* Display the hamburger menu button */
+    .mobbutt {
+        display: block;
+    }
+
+    /* Hide the regular menu */
+    .menu {
+        display: none;
+    }
+
+    /* Hide the regular contact button on mobile */
+    .btn {
+        display: none;
+    }
+
+    /* Show the mobile navigation menu when 'open' class is added */
+    .navimenu.open {
+        display: flex;
+    }
+}

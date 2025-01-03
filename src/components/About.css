@@ -1,0 +1,152 @@
+.About{
+    height: 100%;
+    max-height: calc(100vh - 5rem);
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid black; */
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    /* background-color: rgb(40,40,40); */
+}
+.myfullname{
+    width: 100%;
+    max-width: 40rem;
+    text-align: center;
+    color:azure;
+    /* margin: 0 auto; */
+}
+.introduction{
+     margin: 0 auto;
+     width: 100%;
+    max-width: 40rem;
+    /* border: solid black; */
+}
+.specialint{
+    /* padding: 2rem; */
+    width: 100%;
+    max-width: 50rem;
+    /* border: solid black; */
+}
+.role{
+    color: yellow;
+}
+.educate{
+
+    /* border: solid black; */
+    display: flex;
+    width: 100%;
+    max-width: 50rem;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0 auto;
+    flex-shrink: 1;
+}
+.intern{
+    padding: 1rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.1px solid yellow;
+    transition: transform 0.3s ease-in-out;
+    /* background-color: rgb(40,40,40); */
+    border-radius: 20px;
+}
+.btech{
+    padding: 1rem;
+    border: 0.1px solid yellow;
+    transition: transform 0.3s ease-in-out;
+    /* background-color: rgb(40,40,40); */
+    border-radius: 20px;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intern:hover{
+    transform: scale(1.1);
+}
+.btech:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:700px){
+    .intern{
+        font-size: 1rem;
+    }
+    .btech{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .intern{
+        font-size: 0.9rem;
+    }
+    .btech{
+        font-size: 0.9rem;
+    }
+    .introduction{
+        flex-shrink: 1;
+        font-size: 0.9rem;
+    }
+    .myfullname{
+        font-size:2.5rem;
+    }
+
+}
+@media screen and (max-width:530px){
+    .intern{
+        font-size: 0.8rem;
+    }
+    .btech{
+        font-size: 0.8rem;
+    }
+    .introduction{
+        flex-shrink: 1.3;
+        font-size: 0.9rem;
+    }
+    .myfullname{
+        font-size:2.8rem;
+    }
+
+}
+@media screen and (max-width:350px){
+    .intern{
+        font-size: 0.8rem;
+    }
+    .btech{
+        font-size: 0.7rem;
+    }
+    .introduction{
+        flex-shrink: 1.3;
+        font-size: 0.9rem;
+    }
+    .myfullname{
+        font-size:2.5rem;
+    }
+
+}
+@media screen and (max-width:300px){
+    .intern{
+        font-size: 0.6rem;
+    }
+    .btech{
+        font-size: 0.6rem;
+    }
+    .introduction{
+        flex-shrink: 1.3;
+        font-size: 0.9rem;
+    }
+    .myfullname{
+        font-size:2rem;
+    }
+
+}

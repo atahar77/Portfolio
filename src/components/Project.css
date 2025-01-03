@@ -1,0 +1,361 @@
+.proje {
+  height: 100%;
+  max-height: calc(100vh - 5rem);
+  /* height: 100vh; */
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border: solid black; */
+  /* overflow: hidden; */
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.pimages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 60rem;
+  flex-wrap: wrap;
+}
+
+.pimg {
+  width: 100%;
+  height: 10rem;
+  max-width: 15rem;
+  min-width: none;
+  /* width: auto; */
+  /* border: solid black; */
+  border-radius: 30px;
+  object-fit: cover;
+  padding: 1rem 1rem;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: block;
+  flex: 0 1 10%;
+  flex-shrink: 1;
+  /* flex-wrap: wrap; */
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem auto;
+}
+
+.parintro {
+  width: 100vw;
+  max-width: 50rem;
+  text-align: start;
+  margin: 0 auto;
+}
+.Image-container {
+  position: relative;
+  /* display: inline-block; */
+}
+.Image-container:hover .pimg {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.Image-container:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.title {
+  color: rgb(242, 227, 116);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 930px) {
+  .pimages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 60rem;
+    flex-wrap: wrap;
+  }
+  .pimg {
+    height: 9rem;
+    /* width: auto; */
+    /* border: solid black; */
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+    flex: 0 1 auto; /* Each image should take up 100% of the container width on small screens */
+    object-fit: fill; /* Ensures images cover the space properly */
+    /* width: 20%;                 Make images responsive to the container's size */
+    /* height: 13vh; */
+    padding: 0.5rem;
+    /* flex-wrap: wrap; */
+  }
+  .title {
+    color: rgb(17, 16, 16);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .port{
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .pimages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 60rem;
+    flex-wrap: wrap;
+  }
+  .pimg {
+    width: 100%;
+    height: 9rem;
+    max-width: 12rem;
+    min-width: none;
+    /* width: auto; */
+    /* border: solid black; */
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+    flex: 0 1 auto; /* Each image should take up 100% of the container width on small screens */
+    object-fit: fill; /* Ensures images cover the space properly */
+    /* width: 20%;                 Make images responsive to the container's size */
+    /* height: 13vh; */
+    padding: 0.5rem;
+    /* flex-wrap: wrap; */
+  }
+  .title {
+    color: rgb(17, 16, 16);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .port{
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 705px) {
+    .pimages {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 60rem;
+      flex-wrap: wrap;
+    }
+    .pimg {
+      height: 6.8rem;
+      /* width: auto; */
+      /* border: solid black; */
+      border-radius: 20px;
+      padding: 1rem 1rem;
+      margin: 1rem;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: block;
+      flex: 0 1 auto; /* Each image should take up 100% of the container width on small screens */
+      object-fit: fill; /* Ensures images cover the space properly */
+      /* width: 20%;                 Make images responsive to the container's size */
+      /* height: 13vh; */
+      padding: 0.5rem;
+      /* flex-wrap: wrap; */
+    }
+    .parintro{
+        font-size: 0.8rem;
+    }
+    .title {
+      color: rgb(17, 16, 16);
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 590px) {
+    .pimages {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 60rem;
+      flex-wrap: wrap;
+    }
+    .pimg {
+      height: 6rem;
+      /* width: auto; */
+      /* border: solid black; */
+      border-radius: 20px;
+      padding: 1rem 1rem;
+      margin: 1rem;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: block;
+      flex: 0 1 auto; /* Each image should take up 100% of the container width on small screens */
+      object-fit: fill; /* Ensures images cover the space properly */
+      /* width: 20%;                 Make images responsive to the container's size */
+      /* height: 13vh; */
+      padding: 0.5rem;
+      /* flex-wrap: wrap; */
+    }
+    .title {
+      color: rgb(17, 16, 16);
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .parintro{
+        font-size: 0.9rem;
+    }
+  }
+@media screen and (max-width: 485px) {
+  .pimages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 60rem;
+    flex-wrap: wrap;
+  }
+  .pimg {
+    width: 100%;
+  height: 7rem;
+  max-width: 10rem;
+  min-width: none;
+    /* width: auto; */
+    /* border: solid black; */
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+    flex: 0 1 10%; /* Each image should take up 100% of the container width on small screens */
+    object-fit: fill; /* Ensures images cover the space properly */
+    /* width: 20%;                 Make images responsive to the container's size */
+    /* height: 13vh; */
+    padding: 0.5rem;
+    /* flex-wrap: wrap; */
+  }
+  .parintro{
+    font-size: 0.9;
+  }
+  .title {
+    color: rgb(17, 16, 16);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .port{
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pimages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 60rem;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+  }
+  .pimg {
+    width: 100%;
+    height: 7rem;
+    max-width: 9rem;
+    min-width: none;
+    /* width: auto; */
+    /* border: solid black; */
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+    flex: 0 1 auto; /* Each image should take up 100% of the container width on small screens */
+    object-fit: fill; /* Ensures images cover the space properly */
+    /* width: 20%;                 Make images responsive to the container's size */
+    /* height: 13vh; */
+    padding: 0.5rem;
+    /* flex-wrap: wrap; */
+  }
+  .parintro{
+    font-size: 0.8rem;
+  }
+  .title {
+    color: rgb(17, 16, 16);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 390px) {
+    .pimages {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 60rem;
+      flex-wrap: wrap;
+      flex: 0 1 auto;
+    }
+    .pimg {
+        width: 100%;
+        height: 6rem;
+        max-width: 7rem;
+        min-width: none;
+      /* width: auto; */
+      /* border: solid black; */
+      border-radius: 20px;
+      padding: 1rem 1rem;
+      margin: 1rem;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: block;
+      flex: 0 1 auto; /* Each image should take up 100% of the container width on small screens */
+      object-fit: fill; /* Ensures images cover the space properly */
+      /* width: 20%;                 Make images responsive to the container's size */
+      /* height: 13vh; */
+      padding: 0.5rem;
+      /* flex-wrap: wrap; */
+    }
+    .parintro{
+      font-size: 0.8rem;
+    }
+    .title {
+      color: rgb(17, 16, 16);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .port{
+        font-size: 1.8rem;
+    }
+  }

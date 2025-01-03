@@ -8,7 +8,7 @@ import ReactDark from "../assets/icons/ReactDark.svg";
 import NodeJSDark from "../assets/icons/NodeJSDark.svg";
 import ExpressJSDark from "../assets/icons/ExpressJSDark.svg";
 import MongoDB from "../assets/icons/MongoDB.svg";
-import JavaDark from "../assets/icons/Javadark.svg";
+import JavaDark from "../assets/icons/JavaDark.svg";
 import SpringDark from "../assets/icons/SpringDark.svg";
 import MySQLDark from "../assets/icons/MySQLDark.svg";
 import PythonDark from "../assets/icons/PythonDark.svg";

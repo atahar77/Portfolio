@@ -16,7 +16,16 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-    
+        const name = form.current["your_name"].value.trim();
+    const email = form.current["your_email"].value.trim();
+    const message = form.current["message"].value.trim();
+
+    if (!name || !email || !message) {
+        // Show an alert or error message if any field is empty
+        alert("Please fill in all fields before submitting.");
+        return; // Prevent email from being sent
+    }
+
         emailjs
           .sendForm('service_fwbpgfh', 'template_h9t58cs', form.current, {
             publicKey: 'gG2Bfnk2jEfsFeSh-',
